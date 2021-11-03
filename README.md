@@ -1,6 +1,6 @@
-# k_html_css
+### k_html_css
 
-# Visual Studio Code 에디터로 HTML, JavaScript 개발 환경 구축/실행하는 방법
+### Visual Studio Code 에디터로 HTML, JavaScript 개발 환경 구축/실행하는 방법
 
 1. VS Code 설치
 
