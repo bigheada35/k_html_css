@@ -8,9 +8,12 @@
 </head>
 <body>
     <!-- 폼 태그 ---- 주의 : 암기 필수  -->
-
-    <form action="#" method="get">
-        이름 : <input type="text" name="uname" /> <br/>
+            <!-- action은  내용을 집어 넣을 주소, -->
+            <!-- method는 get 과 post 2개 있음. -->
+            <!-- <form action="/board/login" method="get">  -->
+    <form action="#" method="get"> 
+        <!-- name="uname"서버쪽에서 식별 -->
+        이름 : <input type="text" name="uname" /> <br/>   
         아이디 : <input type="text" name="uid" /> <br/>
         비밀번호 : <input type="password" name="uid" /> <br/>
         연락처 : <input type = "text" name="uphone1" size="5" />
@@ -22,7 +25,7 @@
         사용언어: <input type="checkbox" name="lan" value="kor" checked="checked" />한글,
                 <input type="checkbox" name="lan" value="eng" />영어,
                 <input type="checkbox" name="lan" value="jap" />일어,
-                <input type="checkbox" name="lan" value="chi" /> 중국어 <br/>
+                <input type="checkbox" name="lan" value="chi" /> 중국2어 <br/>
         자기소개: <textarea rows="5" cols="20">간단하게 입력하세요</textarea> <br/>
         국적: <select>
                 <option>KOREA</option>
