@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #background{
+            width:100%;
+            height: 1500px;
+            /* background-color: skyblue ; */
+            background: linear-gradient(to bottom, skyblue, white 50%);
+
+        }
+
+        @media screen and (min-width:1024px){
+            #base{
+                width: 80%;
+                height: 1500px;
+
+                margin: 0 auto;
+            }
+            #header{
+                width:100%;
+                height: 400px;
+                background: url(bg.png) no-repeat;
+                /* background: url(bg.png) no-repeat fixed ; */
+                background-size: cover;
+                /* temp; */
+                border: 1px solid gray;
+
+            }
+            #title {
+                font-size: 90px;
+                font-weight: bold;
+                color:yellow;
+                margin-left: 25px;
+                /* text-shadow: 2px #233653; */
+                /* text-shadow: 2px 2px #233653; */
+                text-shadow: 1px 1px #233653;
+                
+            }
+
+            #list_wrap{
+                width: 100%;
+                height: 70px;
+                background-color: rgb(26, 179, 105);
+                /* temp; */
+                border: 1px solid gray;
+                overflow: hidden;
+
+            }
+            ul li{
+                float: left;    
+                width: 20%;
+                color: cornsilk;
+                font-weight: bold;
+                font-size: 18px;
+                list-style: none;
+             } 
+             #wrap{
+                overflow: hidden;
+                border: 1px solid gray; 
+            }
+            #wrap #content{
+                width: 75%;
+                height: 100%;
+                
+                background-color: white ;
+
+                float: left;
+                /* temp; */
+                /* border: 1px solid rgb(128, 128, 128); */
+            }
+            #wrap #banner{
+                width:25%;
+                height: 100%;
+                
+                /* float: right; */
+                float: left;
+                /* temp; */
+                /* border: 1px solid gray; */
+                background-color: greenyellow;
+            }    
+            #banner{
+                /* background-color: greenyellow; */
+            }   
+            .bannerimg{
+                /* margin: auto; */
+                margin: 4px 4px 0px 4px;
+            }  
+
+            
+        }  
+        @media screen and (min-width:600px) and (max-width:1023px){
+            #base{
+                width: 80%;
+                /* height: 1500px; */
+                margin: 0 auto;
+            }
+            #header{
+                width:100%;
+                height: 220px;
+                /* background: url(bg.png) no-repeat; */
+                /* background: url(bg.png) no-repeat fixed ; */
+
+                /* background-size: cover; */
+                /* temp; */
+                border: 1px solid gray;
+                background-color: black;
+
+            }
+            #title{
+                font-size: 80px;
+                font-weight: bold;
+                color:yellow;
+                margin-left: 20px;
+            }
+
+            #list_wrap{
+                width: 100%;
+                /* height: 100px; */
+                /* background-color: rgb(26, 179, 105); */
+                /* temp; */
+                border: 1px solid gray;
+                /* overflow: hidden; */
+                background-color: white;
+            }
+            ul li{
+                /* float: left;     */
+                width: 90%;
+                /* height: 70px; */
+                /* color: cornsilk; */
+                color:gray;
+                font-weight: bold;
+                font-size: 18px;
+                text-align: center;
+                line-height: 40px;
+                /* background-color: green; */
+                list-style: none;
+                border: 1px solid gray;
+                border-radius: 15px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+             } 
+             #wrap{
+                /* overflow: hidden; */
+            }
+            #wrap #content{
+                width: 100%;
+                /* height: 400px; */
+                
+                background-color: white ;
+
+                /* float: left; */
+                /* temp; */
+                border: 1px solid rgb(128, 128, 128);
+            }
+            #wrap #banner{
+                width:100%;
+                
+                /* height:400px; */
+                
+                /* float: right; */
+
+                /* temp; */
+                border: 1px solid gray;
+                
+            }
+                
+
+
+        }               
+
+        #content p{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        #content p:nth-child(1){
+            font-weight: bold;
+            font-size: 20px;
+            
+        }
+        #content p:nth-child(2){
+            font-weight: bold;
+        }
+ 
+
+        #footer{
+            width:100%;
+            height: 100px;
+            background-color: rgba(55, 73, 20, 0.89);
+            color: white;
+            text-align: center;
+            clear: both;
+            line-height: 40px;
+        }
+        #footer p:nth-child(1){
+            /* line-height: 50px; */
+        }
+        #footer p:nth-child(2){
+            /* line-height: 50px; */
+            font-style: italic;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="background">
+
+    
+        <div id="base">
+            <div id="header">
+                <div id="title">Joandora</div>
+                
+            </div>
+            <div id="list_wrap">
+                <ul>
+                    <li>이용 안내</li>
+                    <li>객실 소개</li>
+                    <li>예약 방법</li>
+                    <li>예약 하기</li>
+                </ul>
+            </div>             
+
+            <div id="wrap">
+                <div id="content">
+                    <p>요안도라 소개</p>
+                    <p>¤ 요안도라는 게스트 하우스(Guest House) 형식의 농어촌 민박입니다</p>
+                    <p>
+                        <br>
+                        성산의 날씨는 다음주 내내 높은 구름에 햇살 가득이라고 합니다. 목요일이면 섭씨 27도까지 오른다고 하지만, 늘 부는 바람이 쾌적한 균형을 잡아 마당에 마당에 나가 앉아 있는 시간이 많아질듯 합니다.
+                        <br><br>
+                        오늘은 사진에 보이는 긴 돌담을 따라 들어오는 요안도레 올레 입구에 특곤색의 대문을 달았습니다.
+                        <br><br>
+                        내일은 두달 여동안 밖거리에 만든 게스트 하우스에 연백색의 황토 페인트를 칠할 예정입니다. 
+                        그리고 이것저것 사소한 정리를 마치고 나면, 나이 드시고 젊고 한 미지의 새식구들을 설렘으로 만나고 함께하고, 도시의 바쁜 생활로 소원해진 오래된 친구와의 우정을 이 제주에서 새롭게 열어나가기 위해 요안도라를 세상에 알리려고 합니다.
+                        <br><br>
+                        그럼 이 홈페이지를 공식적으로 체계적으로 갖추면서, 그동안 공사로 어수선해 올려드리지 못한 집 안팎 사진들을 상세하게 올리고 당신을 만날 채비를 마치겠습니다.
+                        <br>
+                        </p>
+                </div>
+                <div id="banner">
+                    <div class="bannerimg"><img src="1.jpg" alt="#" width="100%"></div>
+                    <div class="bannerimg"><img src="2.jpg" alt="#" width="100%"></div>
+                    <div class="bannerimg"><img src="3.jpg" alt="#" width="100%"></div>
+                </div>
+            </div>
+
+            <div id="footer">
+                <!-- <p>제주특별자치도 남제주군 성산읍 수산리 000번지</p> -->
+                제주특별자치도 남제주군 성산읍 수산리 000번지<br>
+                <!-- <p>Copylight &copy; All rights reserved</p> -->
+                Copylight &copy; All rights reserved
+
+            </div>
+            
+        </div>
+
+    </div>
+    
+    
+</body>
+</html>
+
+
