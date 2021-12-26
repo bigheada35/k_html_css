@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <style>
+        .container{
+            width: 400ox; height: 400px;
+            background-color: skyblue;
+
+            /* ---flex--- */
+            display: flex;
+            flex-direction:column ;
+            /* align-items:  flex-start; */
+
+        }
+         /* .dbg1{
+            background-color: gold;
+            border: 1px solid gray
+        }
+        .dbg2{
+            border: 1px solid red;
+        }
+        .dbg3{
+            border: 1px solid gray
+        }
+        
+        .dbg4{
+            background-color: blue;
+            border: 1px solid red;
+        } 
+        .dbg5{
+            width: 100px;   height: 100px;
+            background-color: tomato;
+            border: 1px solid gray;
+        }  
+        .dbg6{
+            background-color: blue;
+            border: 1px solid red;
+        }   
+        .dbg7{
+            width: 100px;   height: 100px;
+            background-color: tomato;
+            border: 1px solid gray;
+        }    */
+
+        
+        .h_title{
+            height:100px;
+        }
+
+        .i_wrap{
+            height:300px;
+
+            display: flex;
+            flex-direction:row ;
+        }
+        .i_person{
+            /* ---player person--- */
+            background-image: url("../../p_template_for_servlet/31.PNG");
+            background-repeat: no-repeat;
+            background-size: contain;
+            
+        }
+        .i_person_act{
+            background-image: url("../../p_template_for_servlet/21.PNG");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        .i_computer{
+            /* ---player computer--- */
+            background-image: url("../../p_template_for_servlet/41.PNG");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        .i_computer_act{
+            background-image: url("../../p_template_for_servlet/21.PNG");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .j_msg{
+            height:100px;
+        }
+
+        .k_wrap_p{
+            /* ---flex--- */
+            display: flex;
+            flex-direction:row ;
+            align-items:  flex-start; 
+       }
+
+        .k1_wrap{
+            /* height:100px; */
+
+             /* ---flex--- */
+            display: flex;
+            flex-direction:row ;
+            align-items:  flex-start; 
+        } 
+        .k2_wrap{
+
+        }
+        .k3_wrap{
+            /* height:100px; */
+
+            /* ---flex--- */
+            display: flex;
+            flex-direction:row ;
+            align-items:  flex-end; 
+        }
+
+    </style>
+
+
+
+</head>
+<body>
+    <div class="container my-5 mx-auto">
+        <div class="text-center h_title dbg1 ">
+                <h1>가위 바위 보 게임 </h1>
+                <!-- <h1 class="display-4">가위 바위 보 게임 </h1> -->
+                <p> 3 vs 6</p>
+        </div>
+
+        <div class=" i_wrap dbg1 dbg2 ">
+            <div class="col-3 i_person dbg3">  </div>
+            <div class="col-3  i_person_act dbg3" > </div>
+            <div class="col-3  i_computer_act dbg3"> </div>
+            <div class="col-3  i_computer dbg3"> </div>
+        </div>
+
+        <div class=" j_msg dbg1 ">
+            <h1>당신이 이겼습니다.</h1>
+        </div>
+
+        <div class=" k_wrap_p dbg1"> 
+            <div class="col-6 k1_wrap dbg5">
+                <a class="dbg4"  href="06_prj2_2.html">   <img class="img-fluid" src="../../p_template_for_servlet/21.PNG" alt="">            </a>
+                <a class="dbg4" href="06_prj2_2.html">   <img class="img-fluid" src="../../p_template_for_servlet/22.PNG" alt="">            </a>
+                <a class="dbg4" href="06_prj2_2.html">   <img class="img-fluid" src="../../p_template_for_servlet/23.PNG" alt="">            </a>
+            </div>
+            <div class="col-1 k2_wrap dbg7">
+                <a class="dbg4" href="06_prj2_2.html"> </a>
+            </div>
+            <div class="col-3 k3_wrap dbg7">
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <button type="img" type="submit" name="rsp" value="보">
+        <img src="../../p_template_for_servlet/21.PNG" alt="">
+    </button>
+
+    <form action="#" method="post"> 
+        <button type="submit" name="var_btn" value="1">	
+            <img class="img-fluid" src="../../p_template_for_servlet/22.PNG" alt="">	
+        </button>
+    </form>
+
+</body>
+</html>

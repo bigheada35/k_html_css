@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+
+    .test_div2 {  
+        /* 주의 : div에는 display 속성에 :inline  안먹는다. */
+        display: inline-flex;    
+    } 
+    .test_flex_list2{
+        /* 주의 : ul 태그에는, display:inline 속성은 먹지 않는다.*/
+        display: inline;
+    }
+    li{
+        /* li 태그에는 , display:inline 속성은 먹는다 */
+        display :inline ;
+    }
+  </style>
+
+</head>
+<body>
+    <div class="test_div"
+        <div class="test_div2"><p>test1</p></div>
+        <div class="test_div2"><p>test2</p></div>
+        <div class="test_div2"><p>test3</p></div>
+    </div>
+    <ul class="test_flex_list1">
+        <li>test_list_1</li>
+        <li>test_list_1</li>
+        <li>test_list_1</li>
+    </ul>
+    <ul class="test_flex_list2">
+        <li>test_list_2</li>
+        <li>test_list_2</li>
+        <li>test_list_2</li>
+    </ul>     
+    
+</body>
+</html>
